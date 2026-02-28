@@ -5,21 +5,21 @@
 class Netg < Formula
   desc "Modern lightweight network scanner"
   homepage "https://github.com/daddylix99/netg-dist"
-  version "1.5"
+  version "1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/daddylix99/netg-dist/releases/download/v1.5/netg_darwin_amd64.tar.gz"
-      sha256 "cf7a21fa2f622394850ee9eb6785b480cd9dfee487d3f6eab335780e5571890a"
+      url "https://github.com/daddylix99/netg-dist/releases/download/v1.6/netg_darwin_amd64.tar.gz"
+      sha256 "b566d473c9dbb39b87dd2bb5fda12b8849ddeb1d7a7bfa339c12ec843463231c"
 
       define_method(:install) do
         bin.install "netg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/daddylix99/netg-dist/releases/download/v1.5/netg_darwin_arm64.tar.gz"
-      sha256 "0212d1cafd8e1be9841489fa506be9be4ffed56588c1bf7bdec5501d5eee0ae1"
+      url "https://github.com/daddylix99/netg-dist/releases/download/v1.6/netg_darwin_arm64.tar.gz"
+      sha256 "b9d9e40890710039a6fcf4eac5156aa3924803331f06110c0ec03500c749c919"
 
       define_method(:install) do
         bin.install "netg"
@@ -29,15 +29,15 @@ class Netg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daddylix99/netg-dist/releases/download/v1.5/netg_linux_amd64.tar.gz"
-      sha256 "1fedbe45b7cffd51262a6fc6459fff34f05ce74e06584a57c68f1c145688ca93"
+      url "https://github.com/daddylix99/netg-dist/releases/download/v1.6/netg_linux_amd64.tar.gz"
+      sha256 "5e2641142cd7dd0a8bcd976561ed156fe15b6fcb80c6f6c4c9b742fef0870dfc"
       define_method(:install) do
         bin.install "netg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daddylix99/netg-dist/releases/download/v1.5/netg_linux_arm64.tar.gz"
-      sha256 "e2b7e9468f4de30dd811e6cba03661014afb49df6c2281628f15fcbdb13e2be3"
+      url "https://github.com/daddylix99/netg-dist/releases/download/v1.6/netg_linux_arm64.tar.gz"
+      sha256 "155c7a4cb3ad4c0f3523b52d34dd391d05a1031bf760bc7895cd956b747bb251"
       define_method(:install) do
         bin.install "netg"
       end
