@@ -5,21 +5,21 @@
 class Netg < Formula
   desc "Modern lightweight network scanner"
   homepage "https://github.com/daddylix99/netg-dist"
-  version "1.3.0"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/daddylix99/netg-dist/releases/download/v1.3.0/netg_darwin_amd64.tar.gz"
-      sha256 "f2ec6c7705f57f80500b6c01feef425fd7f8e6095ce7b93c341f55a94662f0ad"
+      url "https://github.com/daddylix99/netg-dist/releases/download/v0.0.2/netg_darwin_amd64.tar.gz"
+      sha256 "7c049100c4a7748afb824ec4be0839d66600ed43e82c2ab54161448aa94aee54"
 
       define_method(:install) do
         bin.install "netg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/daddylix99/netg-dist/releases/download/v1.3.0/netg_darwin_arm64.tar.gz"
-      sha256 "a43c10ec4a288ecf36d237885b6ab24d5fa8830999bc64e254dcb1a2d9aa18d0"
+      url "https://github.com/daddylix99/netg-dist/releases/download/v0.0.2/netg_darwin_arm64.tar.gz"
+      sha256 "1b0c83682965a76d9347454e00eceee6b6e57c0704e50d9621acd3b8b993c694"
 
       define_method(:install) do
         bin.install "netg"
@@ -29,15 +29,15 @@ class Netg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daddylix99/netg-dist/releases/download/v1.3.0/netg_linux_amd64.tar.gz"
-      sha256 "0578a93286fa3280b2e9721dfff1ba2da57e47c77326fe2374e2a5a4b8672893"
+      url "https://github.com/daddylix99/netg-dist/releases/download/v0.0.2/netg_linux_amd64.tar.gz"
+      sha256 "f72b90d103a8e9216d5453a16cc71b8bfca498e3dc9eae1e881eebd9e793e067"
       define_method(:install) do
         bin.install "netg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daddylix99/netg-dist/releases/download/v1.3.0/netg_linux_arm64.tar.gz"
-      sha256 "abc36a1c0dca0233fa2047c875393d7d2d3261a15efd7dc15a3f07bddd2d3cbf"
+      url "https://github.com/daddylix99/netg-dist/releases/download/v0.0.2/netg_linux_arm64.tar.gz"
+      sha256 "d1fdf85ee4812a2225a712bfc4ae609ff7258ad13eeaf149229e0eb21d584df9"
       define_method(:install) do
         bin.install "netg"
       end
